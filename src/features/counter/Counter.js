@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
   increment,
   incrementByAmount,
+  resetState,
   incrementAsync,
   incrementIfOdd,
   selectCount,
@@ -13,9 +14,15 @@ import styles from './Counter.module.css';
 export function Counter() {
   const count = useSelector(selectCount);
   const dispatch = useDispatch();
+  const [value, setValue] = useState("");
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
+
+
+  useEffect(()=> {
+    console.log("Testing value: ", value)
+  }, [value])
 
   return (
     <div>
@@ -60,6 +67,12 @@ export function Counter() {
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(resetState(incrementValue))}
+        >
+          Reset State
         </button>
       </div>
     </div>

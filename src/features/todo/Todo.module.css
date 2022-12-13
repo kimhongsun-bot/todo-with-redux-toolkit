@@ -1,0 +1,97 @@
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(160, 161, 226, 0.939);
+    border-radius: 5px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttonDelete {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(225, 57, 57, 0.939);
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.buttonCheck {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(91, 178, 51, 0.939);
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.input {
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgba(228, 87, 141, 0.336);
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.taskTextWrap {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.taskText {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgba(127, 87, 228, 0.671);
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.taskDoneText {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    margin: 10px;
+    background-color: rgba(127, 87, 228, 0.671);
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.main {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

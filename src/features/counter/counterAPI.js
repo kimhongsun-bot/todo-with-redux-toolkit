@@ -4,3 +4,10 @@ export function fetchCount(amount = 1) {
     setTimeout(() => resolve({ data: amount }), 500)
   );
 }
+
+
+export function fetchToDo(value) {
+  return new Promise((resolve) => 
+    setTimeout(() => resolve({data: value}), 1000)
+  )
+}
